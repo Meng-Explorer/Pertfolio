@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Di Menglang | Creative Developer & Problem Solver</title>
+  <meta name="description" content="Portfolio of Di Menglang, a Full-Stack Developer and UI/UX Designer specializing in building beautiful, high-performance digital experiences.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="dark-theme">
+  <!-- Grid Background & Ambient Lights -->
+  <div class="grid-bg"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Header / Navigation -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="logo-link">
+        <span class="logo-accent">&lt;</span>MengExplore<span class="logo-accent"> /&gt;</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#hero" class="nav-link active" id="nav-link-hero">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Menu Btn) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" id="theme-btn">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+        
+        <button id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Toggle menu" id="menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge reveal-item">I am a student at build Bright University</span>
+          <h1 class="hero-title reveal-item">
+            Hi, I'm <span class="gradient-text">Di Menglang</span>
+          </h1>
+          <h2 class="hero-subtitle reveal-item">
+            I'm a <span id="typewriter" class="typewriter-text" data-words='["Full-Stack Developer", "Frontend Developer", "Backend Developer "]'></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description reveal-item">
+            Building elegant, pixel-perfect, and high-performance web applications that merge user-centric design with robust engineering.
+          </p>
+          <div class="hero-buttons reveal-item">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-work">
+              <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal-item">
+          <div class="image-wrapper">
+            <img src="assets/user_photo.jpg" alt="MengExplore Photo" class="hero-img" id="hero-img">
+            <div class="floating-card card-1">
+              <i class="fa-solid fa-code text-cyan"></i>
+              <div>
+                <h4>Clean Code</h4>
+                <p>Modern Best Practices</p>
+              </div>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fa-solid fa-wand-magic-sparkles text-purple"></i>
+              <div>
+                <h4>Frontend</h4>
+                <p>Interactive Designs</p>
+              </div>
+            </div>
+
+            <div class="floating-card card-3">
+              <i class="fa-solid fa-server text-green"></i>
+              <div>
+                <h4>Backend</h4>
+                <p>Scalable Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to About Section">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">My Journey & Passion</h2>
+          <div class="header-line"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-text reveal-item">
+            <h3>Crafting digital experiences at the intersection of design and code.</h3>
+            <p>
+              I am a digital artisan with a passion for designing and building interactive web experiences. With a background in computer science and a keen eye for aesthetics, I bridge the gap between complex backend logic and beautiful, accessible frontend interfaces.
+            </p>
+            <p>
+              My goal is to construct scalable applications that not only solve business needs but also delight users with micro-animations and intuitive navigation. I thrive on learning new technologies and constantly pushing the boundaries of what is possible on the web.
+            </p>
+            <!-- <div class="about-personal-info">
+              <div class="info-item">
+                <span class="info-label">Based in:</span>
+                <span class="info-val">San Francisco, CA</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Freelance:</span>
+                <span class="info-val text-green">Available</span>
+              </div>
+            </div> -->
+          </div>
+          
+          <div class="about-stats reveal-item">
+            <div class="stat-card glass-card">
+              <span class="stat-number gradient-text">0</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number gradient-text">20+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number gradient-text">15+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number gradient-text">100%</span>
+              <span class="stat-label">Commitment Rate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">My Toolbox</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="header-line"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="skills-category glass-card reveal-item">
+            <div class="category-header">
+              <i class="fa-solid fa-laptop-code category-icon"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>HTML & CSS</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>JavaScript & jQuery</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>React</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Tailwind CSS & Bootstrap</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="skills-category glass-card reveal-item">
+            <div class="category-header">
+              <i class="fa-solid fa-code category-icon"></i>
+              <h3>Languages & Backend</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Java / Spring Boot</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>C# & PHP</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>C++ / C</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="skills-category glass-card reveal-item">
+            <div class="category-header">
+              <i class="fa-solid fa-database category-icon"></i>
+              <h3>Databases</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>PostgreSQL</span>
+                  <span>86%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 86%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>MySQL</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>SQL Server</span>
+                  <span>82%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 4 -->
+          <div class="skills-category glass-card reveal-item">
+            <div class="category-header">
+              <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+              <h3>Tools & Software</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>VS Code & IntelliJ</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Git / GitHub</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Postman</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Figma</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Creations</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <!-- Filters -->
+        <div class="project-filters reveal-item">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+          <button class="filter-btn" data-filter="web" id="filter-web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design" id="filter-design">UI/UX Design</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project Card 1 (Web) -->
+          <div class="project-card glass-card reveal-item" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="assets/project_dashboard.png" alt="Nexus SaaS Analytics Dashboard" class="project-img" id="project-dashboard-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View Project Code" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="project-link-icon" aria-label="Live Demo" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Web Application</span>
+              <h3 class="project-title">Nexus Analytics Dashboard</h3>
+              <p class="project-desc">A premium cloud-native analytics dashboard supporting real-time data streaming, interactive canvas charts, and customizable widget metrics.</p>
+              <div class="project-tech">
+                <span>React.js</span>
+                <span>Chart.js</span>
+                <span>Node.js</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 (Mobile) -->
+          <div class="project-card glass-card reveal-item" data-category="mobile">
+            <div class="project-img-wrapper">
+              <img src="assets/project_ecommerce.png" alt="Velo Mobile Ecommerce App" class="project-img" id="project-ecommerce-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View Project Code" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" class="project-link-icon" aria-label="Live Demo" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Mobile App</span>
+              <h3 class="project-title">Velo Store App</h3>
+              <p class="project-desc">A gorgeous and responsive e-commerce application with smooth page transitions, high-fidelity cards, and an integrated Apple Pay sandbox.</p>
+              <div class="project-tech">
+                <span>React Native</span>
+                <span>Expo</span>
+                <span>Redux</span>
+                <span>Stripe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 (Design) -->
+          <div class="project-card glass-card reveal-item" data-category="design">
+            <div class="project-img-wrapper">
+              <img src="assets/project_creative.png" alt="Aether Futuristic Design System" class="project-img" id="project-creative-img">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link-icon" aria-label="View Design File" target="_blank"><i class="fa-brands fa-figma"></i></a>
+                  <a href="#" class="project-link-icon" aria-label="Live Demo" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">UI/UX Design</span>
+              <h3 class="project-title">Aether Landing System</h3>
+              <p class="project-desc">A futuristic UI kit and landing page concept featuring high-end glassmorphic layouts, floating elements, and premium animations.</p>
+              <div class="project-tech">
+                <span>Figma</span>
+                <span>HTML/CSS</span>
+                <span>GSAP</span>
+                <span>UI Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header reveal-item">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Create Together</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details -->
+          <div class="contact-info-panel reveal-item">
+            <h3>Let's talk about your next project or role opportunity.</h3>
+            <p>I'm always open to discussing new designs, coding projects, or creative ideas. Email me or fill out the form, and I will get back to you within 24 hours.</p>
+            
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4>Email Me</h4>
+                  <a href="mailto:langmeng514@gmail.com" id="contact-email-link">langmeng514@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <span>Sen Sok, Phnom Penh, Cambodia</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Socials -->
+            <div class="social-links">
+              <a href="#" class="social-icon-btn" aria-label="GitHub" id="social-github"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="social-icon-btn" aria-label="LinkedIn" id="social-linkedin"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-icon-btn" aria-label="Telegram" id="social-telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#" class="social-icon-btn" aria-label="Dribbble" id="social-dribbble"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel glass-card reveal-item">
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="input-group">
+                  <input type="text" id="form-name" name="name" required placeholder=" ">
+                  <label for="form-name">Full Name</label>
+                </div>
+                <div class="input-group">
+                  <input type="email" id="form-email" name="email" required placeholder=" ">
+                  <label for="form-email">Email Address</label>
+                </div>
+              </div>
+              <div class="input-group">
+                <input type="text" id="form-subject" name="subject" required placeholder=" ">
+                <label for="form-subject">Subject</label>
+              </div>
+              <div class="input-group">
+                <textarea id="form-message" name="message" rows="5" required placeholder=" "></textarea>
+                <label for="form-message">Your Message</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              
+              <!-- Form Messages -->
+              <div id="form-status" class="form-status-msg"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright">&copy; 2026 MengExplore. Crafted with passion.</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#hero" class="back-to-top" aria-label="Back to Top" id="back-to-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
